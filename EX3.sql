@@ -17,4 +17,5 @@ insert into product values(6,'soap',60);
 select * from product;
 rollback to ss;
 select * from product;
-delete price from product;
+truncate table product;
+drop table product;
