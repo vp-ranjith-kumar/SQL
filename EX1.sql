@@ -16,4 +16,3 @@ truncate table cs_student;
 select * from cs_student;
 drop table cs_student; 
 desc cs_student; 
-
