@@ -13,3 +13,4 @@ begin
     end loop;
     dbms_output.put_line('Sum of ' || n || ' natural numbers : ' || s);
 end;
+/

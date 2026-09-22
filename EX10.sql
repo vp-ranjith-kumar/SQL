@@ -1,0 +1,16 @@
+create table book (book_no number(4) primary key, book_name varchar2(35), author varchar2(30), pub varchar2(35));
+desc book;
+insert into book (book_no, book_name, author, pub) values (210, 'programming in c', 'balagurusamy', 'tata');
+insert into book (book_no, book_name, author, pub) values (211, 'c++ programming', 'robert lafore', 'williams publ.');
+insert into book (book_no, book_name, author, pub) values (212, 'python for beginners', 'kannan', 'margam publi.');
+insert into book (book_no, book_name, author, pub) values (213, 'database concepts', 'hindburg', 'margam publi.');
+insert into book (book_no, book_name, author, pub) values (215, 'data mining techniques', 'archana', 'margam publi.');
+select * from book;
+create table book_issued (book_no number(4) primary key, book_name varchar2(35), author varchar2(30), pub varchar2(35));
+desc book_issued;
+insert into book_issued (book_no, book_name, author, pub) values (211, 'c++ programming', 'robert lafore', 'williams publ.');
+insert into book_issued (book_no, book_name, author, pub) values (213, 'database concepts', 'hindburg', 'margam publi.');
+select * from book_issued;
+drop table book;
+drop table book_issued;
+commit;

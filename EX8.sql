@@ -24,7 +24,7 @@ for each row
 begin
     insert into emp_d values (:new.eno, :new.ename, :new.dept);
     dbms_output.put_line('Inserted into the table emp_d');
-end;
+end t1;
 /
 
 insert into emp values (101, 'ROBERT', 'DELHI', 'MANAGER', 'HR', 45000);
@@ -39,7 +39,7 @@ for each row
 begin
     delete from emp_d where eno = :old.eno;
     dbms_output.put_line('Deleted record from table emp_d');
-end;
+end t2;
 /
 
 delete from emp where eno = 101;
@@ -56,7 +56,7 @@ begin
         dept = :new.dept
     where eno = :new.eno;
     dbms_output.put_line('Updated record in the table emp_d');
-end;
+end t3;
 /
 
 update emp set dept = 'web design' where eno = 102;

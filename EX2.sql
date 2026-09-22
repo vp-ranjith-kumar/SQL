@@ -16,6 +16,6 @@ delete from student where sno=2;
 select * from student;
 select * from student where result='pass';
 select sno, sname, result from student where course='IIBSC';
+commit;
 truncate table student;
-rollback;
 drop table student;
