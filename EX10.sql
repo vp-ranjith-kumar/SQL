@@ -11,6 +11,6 @@ desc book_issued;
 insert into book_issued (book_no, book_name, author, pub) values (211, 'c++ programming', 'robert lafore', 'williams publ.');
 insert into book_issued (book_no, book_name, author, pub) values (213, 'database concepts', 'hindburg', 'margam publi.');
 select * from book_issued;
+commit;
 drop table book;
 drop table book_issued;
-commit;
